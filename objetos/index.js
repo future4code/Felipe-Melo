@@ -92,18 +92,19 @@
 
 //----------------------------------------------------------------------
 
-const filmes ={
-    nome: 'Avatar',
-    anoDeLançamento: 2015, 
-    disponibilidade: true
-}
-const filmes2 ={
-    nome: 'Vingadores',
-    anoDeLançamento: 2019, 
-    disponibilidade: false
-}
- function lançamentoDeFilmes(filmes, filmes2)  {
-    console.log('o primeiro filme foi lançado antes do segundo?',filmes.disponibilidade)
-    console.log('o primeiro filme foi lançado no mesmo ano?',filems2.disponibilidade)
- }
- lançamentoDeFilmes(filmes, filmes2)
+// const filmes ={
+//     nome: 'Avatar',
+//     anoDeLançamento: 2015, 
+//     disponibilidade: true
+// }
+// const filmes2 ={
+//     nome: 'Vingadores',
+//     anoDeLançamento: 2019, 
+//     disponibilidade: false
+// }
+//  function lançamentoDeFilmes(filmes, filmes2)  {
+//     console.log('o primeiro filme foi lançado antes do segundo?',filmes.disponibilidade)
+//     console.log('o primeiro filme foi lançado no mesmo ano?',filems2.disponibilidade)
+//  }
+//  lançamentoDeFilmes(filmes, filmes2)
+
