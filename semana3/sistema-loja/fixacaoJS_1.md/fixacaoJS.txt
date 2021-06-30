@@ -1,0 +1,16 @@
+``` function calculaSalario(qtdeCarrosVendidos, valorTotalVendas) {
+ // Escreva seu código aqui
+let salarioFuncionario = 2000
+let salarioComComissao = 
+
+if(qtdeCarrosVendidos > 0 ){
+  for(let i=0; i<qtdeCarrosVendidos; i++){
+    salario += 100
+    salarioComComissao = valorTotalVendas * 0,05
+  }
+  salarioFuncionario += salarioComComissao
+}
+
+return salarioComComissao
+}
+```
