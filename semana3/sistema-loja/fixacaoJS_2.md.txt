@@ -1,0 +1,5 @@
+```function calculaPrecoTotal(quantidade) {
+  // Escreva seu código aqui
+  const precoMaca = 1.30 + quantidade < 12 = 1.30
+   return precoMaca
+}```
