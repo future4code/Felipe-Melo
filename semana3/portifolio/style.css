@@ -1,0 +1,69 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu{
+    background-color: antiquewhite;
+    border: 2px solid ;
+    text-align: center;
+    border-radius: 40px;
+  
+    padding: 10px;
+}
+#initial{
+    text-align: center;
+    margin-top: 10%;
+}
+.text1{
+    padding: 20px;
+    text-align: center;
+}
+.container{
+    margin-top:5%;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: antiquewhite;
+    /* padding:20px; */
+    border-radius: 40px;
+    border: 2px solid;
+    margin-left: 20%;
+    
+}
+.text2{
+    width: 250px;
+    height:250px;
+    background-color: antiquewhite;
+    text-align: center;
+    border-radius: 40px;
+    border: 2px solid;
+    margin-left: 20%;
+    margin-top: 5px;
+    
+}
+.skills{
+    font-size: 20px;
+}
+
+.img{
+    
+    display: inline;
+    width: 250px;
+    height: 250px;
+    border-radius:50px;
+    margin-left: 20%;
+    /* margin-top: 20px; */
+
+}
+.img-rodape{
+    width: 40px;
+    height: 40px;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: antiquewhite;
+    border: 2px solid;
+    border-radius: 40px;
+    text-align: center;
+}
