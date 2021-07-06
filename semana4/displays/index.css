@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.icone{
+    height: 1.7em;
+    margin-right: 12px;
+}
+.icone-texto{
+    display: flex;
+    align-items: center;
+}
+header{
+    display: flex;
+    background-color: mediumvioletred;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    grid-column: 1 /3;
+}
+.botao-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    background-color: pink;
+    width: 200px;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    background-color: mediumvioletred;
+    text-align: center;
+    justify-content: center;
+    height: 60px;
+    padding: 0 20px;
+    grid-column: 1 /-1;
+}
+.card-image{
+    width:  200px;
+    height: 300px;
+}
+.card-produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.card-image{
+    width: 100%;
+}
+
+.general-conteiner{
+    display: grid;
+    grid-template-columns: 60fr 1fr 60fr;
+    grid-template-columns: 280px 1fr;
+    height: 100vh;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    margin: 20px;
+    overflow: auto;
+  }
