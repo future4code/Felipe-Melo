@@ -6,8 +6,12 @@ header{
     justify-content: space-between;
     align-items: center;
     grid-column: 1 /-1;
+   
+    
+    
     
 }
+
 .video{
     width: 250px;
     height: 250px;
@@ -46,3 +50,22 @@ footer{
     border: 1px solid black;
     align-items: center;
 }
+
+    @media screen and (min-device-width : 360px) and (max-device-width : 640px){
+        .general-conteiner{
+            grid-template-columns: 2fr;
+        }
+    header{
+        width:100%;
+    }
+    .v1{
+        width: 280px;
+        height: 150px;
+    }
+   
+    
+    }
+
+
+    
+
