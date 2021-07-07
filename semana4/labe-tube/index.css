@@ -1,0 +1,48 @@
+header{
+    display: flex;
+    border: 1px solid black;
+    padding: 20px;
+    background-color:orange;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 /-1;
+    
+}
+.video{
+    width: 250px;
+    height: 250px;
+}
+.v1{
+    display:flex;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    align-items: center;
+    
+}
+.general-conteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1 /4;
+}
+footer{
+    display: flex;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: orange;
+    justify-content: center;
+    grid-column: 1 /-1;
+}
+
+
+/* ESTILIZAÇÃO DAS PAGINAS DE VIDEO */
+
+
+.pag1{
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    padding: 20px;
+    border: 1px solid black;
+    align-items: center;
+}
