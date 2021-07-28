@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "7b244816-1aa1-42d6-8a92-da6b7e28c2ef",
+		"name": "playlist-labenu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"getAllPlaylist",
+							"addTrackToPlaylist",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "getAllPlaylist",
+						"value": "https://youtu.be/7wtfhZwyrcc",
+						"type": "text"
+					},
+					{
+						"key": "addTrackToPlaylist",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "getAllPlaylist",
+					"host": [
+						"getAllPlaylist"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
