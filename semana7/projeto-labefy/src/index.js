@@ -1,14 +1,10 @@
 import React from "react";
-import styled from "styled-components";
-import axios from "axios"
-import PlaylistCard from "../PlaylistCard";
-import { baseUrl, axiosConfig } from "../../constants";
 
-const PlaylistsContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`
+import axios from "axios"
+
+
+
+
 
 class Playlists extends React.Component {
     state = {
