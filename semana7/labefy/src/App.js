@@ -1,12 +1,23 @@
 import React from 'react'
 import './App.css';
-import Header from './Header'
+import styled from "styled-components"
+
+
+const AppContainer = styled.div`
+display: flex;
+flexdirection: column;
+
+`
+
+
 
 function App() {
   return (
-    <div>
-      <Header/>
-     </div>
+    <AppContainer>
+
+    </AppContainer>
+
+     
   );
 }
 
