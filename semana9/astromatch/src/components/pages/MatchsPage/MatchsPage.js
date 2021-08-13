@@ -1,17 +1,18 @@
 import React from "react"
-import  ProfileListItem  from "./components/ProfileListItem/ProfileListItem"
-import { MatchesContainer, MatchesList } from './styled';
+import ProfileListItem from "../../ProfileListItem/ProfileListItem"
+import { Profile } from "../HomePage/styled";
+import { list, div } from './styled';
 
  const MatchsPage = () => {
     return(
-        <MatchesContainer>
-            <MatchesList>
-               {/*  <ProfileListItem />
+        <div>
+            <list>
                 <ProfileListItem />
                 <ProfileListItem />
-                <ProfileListItem /> */}
-            </MatchesList>
-        </MatchesContainer>
+                <ProfileListItem />
+                <ProfileListItem />
+            </list>
+        </div>
     )
 }
 

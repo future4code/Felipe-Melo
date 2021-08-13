@@ -12,7 +12,7 @@ export const ListItemContainer = styled.div`
 `
 
 
-export const RoundImage = style.div`
+export const RoundImage = styled.div`
         width: 60px;
         height: 60px;
         border-radius: 30px;
