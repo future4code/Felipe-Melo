@@ -1,6 +1,6 @@
 import react from "react"
 import styled from "styled-components"
-
+import {Form} from "../HomePage/styled"
 
 function HomePage(){
     return(
