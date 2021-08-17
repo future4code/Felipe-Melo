@@ -10,5 +10,6 @@ export const Form = styled.div`
     flex-direction: column;
     text-align: center;
     padding: 40px;
-
+    margin-top:15%;
+    border-radius: 5px;
 `
