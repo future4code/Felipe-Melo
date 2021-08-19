@@ -11,5 +11,5 @@ text-align: center;
 align-items: center;
 justify-content: center;
 list-style-type:none;
-
+flex-direction: column;
 `
