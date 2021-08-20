@@ -7,6 +7,7 @@ import ListTrips from './pages/HomePage/ListTrips/ListTrips';
 
 import TripDetails from './pages/HomePage/TripDetails/TripDetails';
 import LoginPage from './pages/HomePage/LoginPage/LoginPage';
+import CreateTrips from './pages/HomePage/TripDetails/CreateTrips/CreateTrips';
 
 
 
@@ -25,12 +26,17 @@ function App() {
   <Container> 
       <BrowserRouter>
                 <Switch>
-          
+         
           
               <Route exact path={"/"}>
                 <HomePage/>
                 
               </Route>
+
+              <Route exact path={"/"}>
+            <CreateTrips/>
+          </Route>
+          
 
               <Route exact path={"/ListTrips"}>
               <ListTrips/>
