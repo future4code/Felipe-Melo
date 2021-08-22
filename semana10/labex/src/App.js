@@ -33,22 +33,22 @@ function App() {
                 
               </Route>
 
-              <Route exact path={"/"}>
-            <CreateTrips/>
-          </Route>
-          
+              <Route exact path={"/loginPage"}>
+              <LoginPage/>
+              </Route>
 
               <Route exact path={"/ListTrips"}>
-              <ListTrips/>
+                <ListTrips/>
               </Route>
 
               <Route exact path={"/TripDetails"}>
                 <TripDetails/>
               </Route>
 
-              <Route exact path={"/LoginPage"}>
-                <LoginPage/>
-              </Route>
+               <Route exact path={"/CreateTrips"}>
+            <CreateTrips/>
+          </Route>
+           
 
 
    

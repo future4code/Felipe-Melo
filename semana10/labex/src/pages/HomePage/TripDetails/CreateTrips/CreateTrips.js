@@ -1,11 +1,11 @@
-    import useForm from "./pages/useForms/useForms"
+  
     
 
 
 
     function CreateTrips(){
 
-        const {form, onChange, cleanFields} = useForm({
+        const {form, onChange, cleanFields} = ({
             nome:"",
             idade:"", 
             email:""})

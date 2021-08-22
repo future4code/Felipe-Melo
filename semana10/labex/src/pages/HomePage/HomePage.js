@@ -18,7 +18,7 @@ function HomePage(){
     return(
         <Form>
             <h1>LabeX</h1>
-            <p>Aqui vai a a logo</p>
+          
 
 
             <button onClick={goToListTrips}> Viagens</button>

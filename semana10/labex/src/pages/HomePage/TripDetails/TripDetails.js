@@ -1,22 +1,25 @@
-import {List} from './styled'
+import React from 'react'
+import TripInfo from './CreateTrips/TripInfo'
 
 
-function  TripDetails(){
-    return(
-        <List>
-                <h2>Nome</h2>
-                <p>idade</p>
-                <p>Quem voce é </p>
-                <p>Profissão</p>
-                <p>Pais</p>
-                <p>Viagem</p>
-
-                <button>Voltar</button>
 
 
-        </List>
-    )
+
+const TripDetails = (props) => {
+  const {name, planet, description, date, durationInDays} = props.info
+ 
+ 
+ return <div>
+  <div>
+  <p>Informações</p>
+    <TripInfo infoName={'Nome'} info={name}/>
+    <TripInfo infoName={'Planeta'} info={planet}/>
+    <TripInfo infoName={'Data'} info={date}/>
+    <TripInfo infoName={'Descrição'} info={description}/>
+    <TripInfo infoName={'Duração em dias'} info={durationInDays}/>
+  </div>
+</div>
+  
 }
-
 
 export default TripDetails
