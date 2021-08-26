@@ -56,7 +56,7 @@ import axios from "axios"
                     setEscolha(escolha + 1)
                     selecionaPerfil(false)
                 }}
-        >nops
+        >to fora
         </button>
     </div>
 }
