@@ -4,12 +4,16 @@ import { Button } from "@material-ui/core"
 import useForm from "../../hooks/useForms"
 import { useHistory } from "react-router-dom"
 import { General } from "./styled"
+import useUnProtectPage from "../../hooks/useUnprotectPage"
 
 
 
 
 
 const RegisterPage =()=>{
+    useUnProtectPage()
+
+
     const [form, onChange, clear] =useForm({email:"",password:""})
     const history =useHistory()
 
@@ -60,8 +64,7 @@ const RegisterPage =()=>{
         required
         type={"password"}
         />
-
-
+-
 
     <Button 
     type={"submit"}

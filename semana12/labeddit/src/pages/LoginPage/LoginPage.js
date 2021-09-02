@@ -5,16 +5,24 @@ import TextField  from "@material-ui/core/TextField"
 import useForm from "../../hooks/useForms"
 import { useHistory } from "react-router-dom"
 import {goToRegisterPage} from "../../Routes/coordinator"
-
+import { login } from "../../Services/Services/users"
+import useUnProtectPage from "../../hooks/useUnprotectPage"
 
     const LoginPage=()=>{
+        useUnProtectPage()
+
 
         const [form, onChange, clear] =useForm({email:"",password:""})
         const history =useHistory()
 
         const onSubmitForm =(event)=>{
             event.preventDefault()
+            login(form, clear, history)
         }
+
+          
+
+
 
 
             return(

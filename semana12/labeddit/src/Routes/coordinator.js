@@ -7,9 +7,9 @@ export const goToRegisterPage =(history) =>{
 }
 
 export const goToFeedPage =(history) =>{
-    history.push("/Feed")
+    history.push("/pagina-do-Feed")
 }
 
 export const goToPostPage =(history) =>{
-    history.push("/Posts")
+    history.push("/pagina-de-Posts")
 }
