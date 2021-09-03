@@ -4,14 +4,14 @@ import { Button } from "@material-ui/core"
 import useForm from "../../hooks/useForms"
 import { useHistory } from "react-router-dom"
 import { General } from "./styled"
-import useUnProtectPage from "../../hooks/useUnprotectPage"
-
+/* import useUnProtectPage from "../../hooks/useUnprotectPage"
+ */
 
 
 
 
 const RegisterPage =()=>{
-    useUnProtectPage()
+   /*  useUnProtectPage() */
 
 
     const [form, onChange, clear] =useForm({email:"",password:""})

@@ -6,10 +6,10 @@ import useForm from "../../hooks/useForms"
 import { useHistory } from "react-router-dom"
 import {goToRegisterPage} from "../../Routes/coordinator"
 import { login } from "../../Services/Services/users"
-import useUnProtectPage from "../../hooks/useUnprotectPage"
+/* import useUnProtectPage from "../../hooks/useUnprotectPage" */
 
     const LoginPage=()=>{
-        useUnProtectPage()
+        /* useUnProtectPage() */
 
 
         const [form, onChange, clear] =useForm({email:"",password:""})

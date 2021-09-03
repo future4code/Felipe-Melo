@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+/* import { useEffect } from "react"
 import { goToLogin } from "../Routes/coordinator"
 import { useHistory } from "react-router-dom"
 
@@ -17,4 +17,4 @@ const useProtectPage =()=>{
 
 }
 
-export default useProtectPage
+export default useProtectPage */
