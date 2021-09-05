@@ -1,9 +1,4 @@
 import { CardActionArea, CardMedia, Typography } from "@material-ui/core"
-import {RecipeCardContent} from "@material-ui/core"
-
-
-
-
 
 const Card =() =>{
     return(
@@ -11,29 +6,14 @@ const Card =() =>{
             <CardActionArea>
                 <CardMedia
                 component={'img'}
-                alt={props.title}
+                alt={""}
                 height={'150px'}
-                image={props.image}
-                title={props.title}
+                image={""}
+                title={""}
                 />
-
-            <RecipeCardContent>
-                <Typography align={'center'}>
-                    {props.title.toUpperCase()}
-                </Typography>
-            </RecipeCardContent>
-
-
-              
-            </CardActionArea>
+           </CardActionArea>
         </Card>
-
-
     )
-
-
-
-
 }
 
 export default Card

@@ -6,10 +6,23 @@ import Button from '@material-ui/core/Button';
 import { goToLogin } from '../../Routes/coordinator';
 import { useHistory } from "react-router-dom"
 
-
-
-function Header() {
+function Header({rightButtonText, setRightButtonText}) {
+  const token = localStorage.getItem("token")
   const history =useHistory()
+
+  const logout =()=>{
+    localStorage.removeItem("token")
+  }
+
+  const rightButtonAction =()=>{
+    if(token){
+      logout()
+      setRightButtonText("login")
+      goToLogin(history)
+    }else{
+      goToLogin(history)
+    }
+  }
  
    return (
     
@@ -17,10 +30,7 @@ function Header() {
          <StyledToolbar>
           
            <Button  color="inherit">LabEddit</Button>
-           <Button onClick={()=> goToLogin(history)}color="inherit">Login</Button>
- 
-         
- 
+           <Button onClick={rightButtonAction}color="inherit">{rightButtonText}</Button>    
          </StyledToolbar>
        </AppBar>
    

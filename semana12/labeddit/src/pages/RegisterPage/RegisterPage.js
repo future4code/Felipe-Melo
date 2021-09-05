@@ -4,13 +4,14 @@ import { Button } from "@material-ui/core"
 import useForm from "../../hooks/useForms"
 import { useHistory } from "react-router-dom"
 import { General } from "./styled"
+import { BASE_URL } from "../../constants/urls"
 /* import useUnProtectPage from "../../hooks/useUnprotectPage"
  */
 
 
 
 
-const RegisterPage =()=>{
+const RegisterPage =({setRightButtonText})=>{
    /*  useUnProtectPage() */
 
 
@@ -21,7 +22,24 @@ const RegisterPage =()=>{
 
     const onSubmitForm =(event)=>{
         event.preventDefault()
+        RegisterPage(form, clear, history, setRightButtonText)
     }
+    
+     const body={
+        email:email,
+        password: password,
+        username: username
+    }
+    
+
+    const response = axios.post(`${BASE_URL}/users/signup `, body)
+
+
+ 
+
+
+
+
 
 
 
@@ -31,20 +49,20 @@ const RegisterPage =()=>{
 <General>
        <TextField
         name={"nome"}
-        value={form.email}
+        value={form.name}
         onChange={onChange}
         label={"Nome"}
         variant={"outlined"}
         fullWidth
         margin={"normal"}
         required
-        type={"Nome"}
+        type={"text"}
         />
 
 
         <TextField
         name={"email"}
-        value={form.password}
+        value={form.email}
         onChange={onChange}
         label={"Insira seu email"}
         variant={"outlined"}
@@ -64,13 +82,14 @@ const RegisterPage =()=>{
         required
         type={"password"}
         />
--
+
 
     <Button 
     type={"submit"}
     fullWidth
     variant={"contained"}
     color={"primary"}
+   
     >
         Cadastrar
     </Button>

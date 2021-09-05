@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import {Button} from "@material-ui/core"
 import { ScreenContainer, InputsContainer } from "./Styled"
 import TextField  from "@material-ui/core/TextField"
@@ -7,21 +7,26 @@ import { useHistory } from "react-router-dom"
 import {goToRegisterPage} from "../../Routes/coordinator"
 import { login } from "../../Services/Services/users"
 /* import useUnProtectPage from "../../hooks/useUnprotectPage" */
+import useState from "axios"
 
-    const LoginPage=()=>{
+
+    const LoginPage=({rightButtonText, setRightButtonText})=>{
         /* useUnProtectPage() */
-
+        
 
         const [form, onChange, clear] =useForm({email:"",password:""})
         const history =useHistory()
 
         const onSubmitForm =(event)=>{
             event.preventDefault()
-            login(form, clear, history)
+            login(form, clear, history, setRightButtonText)
         }
 
-          
-
+      /*   useEffect(()=>{
+            if(localStorage.getItem('token')!== null){
+                history.push("/feed")
+            }
+        },[])  */   
 
 
 
