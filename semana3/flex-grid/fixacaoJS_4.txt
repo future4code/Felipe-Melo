@@ -1,0 +1,9 @@
+```function contaOcorrencias(arrayDeNumeros, numeroEscolhido) {
+  // Escreva seu código aqui
+  const numeroEscolhido = 4
+  
+  if( numeroEscolhido =  ){
+    return o numeroEscolhido aparece  = 
+  }
+}
+```
