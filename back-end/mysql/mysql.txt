@@ -1,0 +1,204 @@
+
+```
+CREATE TABLE Actor (
+    id VARCHAR(255) PRIMARY KEY,
+    name VARCHAR (255) NOT NULL,
+    salary FLOAT NOT NULL,
+    birth_date DATE NOT NULL,
+    gender VARCHAR(6) NOT NULL
+);
+SHOW DATABASES;
+
+SHOW TABLES;
+
+DESCRIBE;
+
+
+
+INSERT INTO Actor(id, name, salary, birth_date, gender)
+VALUES(
+    "001",
+    "TONY RAMOS",
+    40000,
+    "1948-08-25",
+    "MALE"
+);
+
+INSERT INTO Actor(id, name, salary, birth_date, gender)
+VALUES(
+        "002",
+        "FELIPE VIEIRA",
+        30000,
+        "1996-04-29",
+        "MALE"
+);
+
+INSERT INTO Actor(id, name, salary, birth_date, genrer)
+VALUES(
+    "002",
+    "GLORIA PIRES",
+    1.200.000,
+    "1963-08-23",
+    "FEMALE"
+);
+
+/*
+```
+  Você tem um erro em sua sintaxe SQL; verifique o manual que corresponde à versão do seu servidor MySQL para obter a sintaxe correta para usar próximo a '.000, "1963-08-23", "FEMALE")' na linha 5
+```
+*/
+
+INSERT INTO Actor (id, name, salary)
+VALUES(
+  "003", 
+  "Fernanda Montenegro",
+  300000,
+  "1929-10-19", 
+  "female"
+);
+
+/*A contagem de colunas não corresponde à contagem de valores na linha 1
+*/
+
+
+INSERT INTO Actor (id, salary, birth_date, gender)
+VALUES(
+  "004",
+  400000,
+  "1949-04-18", 
+  "male"
+);
+
+/* O campo 'nome' não tem um valor padrão */
+
+
+INSERT INTO Actor (id, name, salary, birth_date, gender)
+VALUES(
+  "005", 
+  "Juliana Paes",
+  719333.33,
+  1979-03-26, 
+  "female"
+);
+
+/* 
+Valor de data incorreto: '1950' para a coluna 'birth_date' na linha 1 */
+
+INSERT INTO Actor(id, name, salary, birth_date, gender)
+VALUES(
+    "006",
+    "FERNANDA MONTENEGRO",
+    300000,
+    "1929-10-29",
+    "FEMALE"
+);
+
+
+INSERT INTO Actor (id, name, salary, birth_date, gender)
+VALUES(
+  "003", 
+  "Fernanda Montenegro",
+  300000,
+  "1929-10-19", 
+  "female"
+);
+
+
+INSERT INTO Actor (id, name, salary, birth_date, gender)
+VALUES(
+  "005", 
+  "Juliana Paes",
+  719333.33,
+  "1979-03-26", 
+  "female"
+);
+
+SELECT *  FROM Actor;
+
+SELECT id, name from Actor WHERE gender ="MALE";
+
+SELECT id, salary from Actor WHERE gender ="MALE";
+
+SELECT id, name, salary from Actor WHERE gender="FEMALE";
+
+SELECT id, name, salary from Actor WHERE salary < 500000;
+
+SELECT id,  from Actor WHERE name = "A" or "J";
+
+SELECT * FROM Actor
+WHERE (name LIKE "A%" OR name LIKE "J%") AND salary > 300000;
+
+SELECT * FROM Actor
+WHERE(name LIKE "C%" OR name LIKE "Z%") AND
+salary> 350000;
+
+
+CREATE TABLE Films (
+    id VARCHAR(255) PRIMARY KEY,
+    name VARCHAR (255) NOT NULL,
+    lançamento FLOAT NOT NULL,
+    avaliação  FLOAT NOT NULL,
+    genre VARCHAR(10) NOT NULL
+);
+
+DROP TABLE Films;
+
+CREATE TABLE Films (
+    id VARCHAR(255) PRIMARY KEY,
+    name VARCHAR (255) NOT NULL,
+    sinopse VARCHAR(255) NOT NULL,
+    lançamento DATE NOT NULL,
+    avaliação  FLOAT NOT NULL,
+    genero VARCHAR(10) NOT NULL
+);
+
+INSERT INTO Films (id, name, sinopse, lançamento, avaliação, genero)
+VALUES(
+    "001",
+    "Se Eu Fosse Voce",
+    "Cláudio e Helena são casados há muitos anos e enfrentam a rotina do casamento. Um dia eles são atingidos por um fenômeno inexplicável e trocam de corpos",
+    "2006-01-06",
+    5,
+    "comédia"
+);
+
+INSERT INTO Films(id, name, sinopse, lançamento, avaliação, genero)
+VALUES(
+    "002",
+    "Doce De Mae",
+    "Dona Picucha, uma animada senhora de 85 anos, sempre causa grandes confusões. A vida dela e dos seus quatro filhos sofre uma reviravolta depois que Zaida, empregada e amiga de Dona Picucha, anuncia que vai se casar e não poderá mais morar com ela",
+    "2012-12-27",
+    10,
+    "familia"
+);
+
+SHOW TABLES;
+
+SELECT * FROM Films;
+
+INSERT INTO Films(id, name, sinopse, lançamento, avaliação, genero)
+VALUES(
+    "003",
+    "Dona Flor e Seus dois maridos",
+    "Dona Flor é uma sedutora professora de culinária casada com Vadinho, que só quer saber de farras e jogatina nas boates. A vida de abusos acaba por acarretar sua morte precoce.",
+    "2017-11-12",
+    8,
+    "comedia"
+);
+
+INSERT INTO Films(id, name, sinopse, lançamento, avaliação, genero)
+VALUES(
+    "004",
+    "Tropa de Elite",
+    "policiais do bope treinados para guerra contra o trafico de drogas nas favelas do rio de janeiro.",
+    "2007-09-15",
+    7,
+    "ação"
+);
+
+SELECT id, name, rating FROM Films WHERE id = "004";
+
+SELECT * FROM Films
+WHERE name LIKE "%vida%";
+
+```
