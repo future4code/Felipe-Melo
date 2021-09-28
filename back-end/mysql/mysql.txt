@@ -1,5 +1,5 @@
 
-```
+
 CREATE TABLE Actor (
     id VARCHAR(255) PRIMARY KEY,
     name VARCHAR (255) NOT NULL,
@@ -201,4 +201,3 @@ SELECT id, name, rating FROM Films WHERE id = "004";
 SELECT * FROM Films
 WHERE name LIKE "%vida%";
 
-```
