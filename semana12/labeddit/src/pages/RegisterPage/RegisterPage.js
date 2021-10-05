@@ -24,25 +24,6 @@ const RegisterPage =({setRightButtonText})=>{
         event.preventDefault()
         RegisterPage(form, clear, history, setRightButtonText)
     }
-    
-     const body={
-        email:email,
-        password: password,
-        username: username
-    }
-    
-
-    const response = axios.post(`${BASE_URL}/users/signup `, body)
-
-
- 
-
-
-
-
-
-
-
 
     return(
         <form onSubmit={onSubmitForm}>
